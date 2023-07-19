@@ -4,8 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { NoPageComponent } from './no-page/no-page.component';
-import { AboutCompanyComponent } from './about-company/about-company.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutMeComponent } from './about/about-me/about-me.component';
+import { AboutComapnyComponent } from './about/about-comapny/about-comapny.component';
 
 
 const appRoute : Routes = [
@@ -14,12 +14,10 @@ const appRoute : Routes = [
   { component: AboutComponent,
       path : 'about',
       children :[
-     {path : 'company', component : AboutCompanyComponent},
-     {path : 'me' , component : AboutMeComponent}
+    {path :'company' , component : AboutComapnyComponent},
+    {path : 'me' , component : AboutMeComponent}
       ]
   },
-
-
   {path : 'user/:id' , component : UserComponent},
   {path : '**' , component :NoPageComponent}
 ]

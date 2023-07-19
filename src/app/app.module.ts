@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoPageComponent } from './no-page/no-page.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { AboutCompanyComponent } from './about-company/about-company.component';
 import { RouterModule } from '@angular/router';
+import { AboutComapnyComponent } from './about/about-comapny/about-comapny.component';
+import { AboutComponent } from './about/about.component';
+import { AboutMeComponent } from './about/about-me/about-me.component';
 
 
 
@@ -17,8 +18,9 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     FooterComponent,
     NoPageComponent,
+    AboutComponent,
+    AboutComapnyComponent,
     AboutMeComponent,
-    AboutCompanyComponent,
   ],
   imports: [
     BrowserModule,

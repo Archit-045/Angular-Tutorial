@@ -8,6 +8,9 @@ import { UserdataService } from './services/userdata.service';
 })
 export class AppComponent {
   title = 'Details';
+  constructor(){
+     localStorage.setItem("isloggedin","false")
+  }
 }
 
 // ng if else

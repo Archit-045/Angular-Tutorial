@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AboutComapnyComponent } from './about/about-comapny/about-comapny.component';
 import { AboutComponent } from './about/about.component';
 import { AboutMeComponent } from './about/about-me/about-me.component';
+import { authGuard } from './auth.guard';
 
 
 

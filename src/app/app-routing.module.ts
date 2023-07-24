@@ -6,19 +6,21 @@ import { UserComponent } from './user/user.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { AboutMeComponent } from './about/about-me/about-me.component';
 import { AboutComapnyComponent } from './about/about-comapny/about-comapny.component';
+import { authGuard } from './auth.guard';
 
 
 const appRoute : Routes = [
   {path :'' , component: HomeComponent},
   
-  { component: AboutComponent,
+  { component: AboutComponent,canActivate : [authGuard],
       path : 'about',
       children :[
     {path :'company' , component : AboutComapnyComponent},
     {path : 'me' , component : AboutMeComponent}
       ]
   },
-  {path : 'user/:id' , component : UserComponent},
+  {path : 'user/:id' , component : UserComponent}, 
+
   {path : '**' , component :NoPageComponent}
 ]
 
